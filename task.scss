@@ -1,0 +1,103 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    position: relative;
+    height:100vh;
+    width:100vw;
+    background-color:#f1f1f1;
+    overflow: none;
+
+    &-header{
+    position:fixed;
+    top:0;
+    left:0;
+    height:100px;
+    width:100vw;
+    background-color: white;
+    }
+    &-body{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top:200px;
+      //  height: 10vh;
+        overflow: none;
+        //max-width: 1024px;
+        width:100vw;
+        .triangle{
+            position: absolute;
+            top: -82px;
+            left: 127px;
+            width: 0;
+            height: 0;
+            border: solid 10px;
+            border-color: transparent grey transparent transparent;
+
+            .videos{
+                top: -9px;
+                left: 22px;
+                position: absolute;
+                color: grey;
+                font-weight: 600;
+            
+            }
+            
+        }
+        .search{
+            height:27px;
+            width:50%;
+            border:0px;
+            border-radius: 4px;
+            //font-size: 900px;
+            //font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        .or{
+            padding-top: 30px;
+        }
+        .upload{
+            position: absolute;
+            width: 150px;
+            background-color: white;
+            left: 385px;
+            top: 90px;
+            border: none;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 150px;
+            font-weight: 900;
+        }
+
+
+    }
+
+     &-sidebar{
+        display:flex;
+        flex-direction: column;
+        position:absolute;
+        top:0px;
+        left:0px;
+        height:100vh;
+        width:100px;
+        background-color: white;
+        z-index:2;
+        box-shadow: 1px 0px 10px 0px grey;
+        .logo{
+            padding-bottom:10px
+        }
+        .students{
+            padding-bottom: 10px;
+        }
+        .lessonPlan{
+            padding-bottom: 10px;
+        }
+      
+     }
+
+
+}

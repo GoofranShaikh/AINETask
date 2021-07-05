@@ -1,0 +1,105 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f1f1f1;
+  overflow: none;
+}
+.container-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 100vw;
+  background-color: white;
+}
+.container-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  top: 200px;
+  overflow: none;
+  width: 100vw;
+}
+.container-body .triangle {
+  position: absolute;
+  top: -82px;
+  left: 127px;
+  width: 0;
+  height: 0;
+  border: solid 10px;
+  border-color: transparent grey transparent transparent;
+}
+.container-body .triangle .videos {
+  top: -9px;
+  left: 22px;
+  position: absolute;
+  color: grey;
+  font-weight: 600;
+}
+.container-body .search {
+  height: 27px;
+  width: 50%;
+  border: 0px;
+  border-radius: 4px;
+}
+.container-body .or {
+  padding-top: 30px;
+}
+.container-body .upload {
+  position: absolute;
+  width: 150px;
+  background-color: white;
+  left: 385px;
+  top: 90px;
+  border: none;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 150px;
+  font-weight: 900;
+}
+.container-sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100px;
+  background-color: white;
+  z-index: 2;
+  -webkit-box-shadow: 1px 0px 10px 0px grey;
+          box-shadow: 1px 0px 10px 0px grey;
+}
+.container-sidebar .logo {
+  padding-bottom: 10px;
+}
+.container-sidebar .students {
+  padding-bottom: 10px;
+}
+.container-sidebar .lessonPlan {
+  padding-bottom: 10px;
+}/*# sourceMappingURL=task.css.map */
